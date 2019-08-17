@@ -5,18 +5,25 @@ import { Button, Layout, Text } from "react-native-ui-kitten";
 export const HomeScreen = () => (
   <Layout style={styles.container}>
     <Text style={styles.text} category="h4">
-      Welcome to UI Kitten
+      Welcome to UI Kitten Quiz Demo App
     </Text>
-    <Button>BUTTON</Button>
+    <Button style={styles.button}>Enter to the Quiz</Button>
   </Layout>
 );
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: "column",
     alignItems: "center"
   },
   text: {
-    marginVertical: 16
+    flex: 1 / 2,
+    textAlign: "center",
+    textAlignVertical: "center",
+    margin: 16
+  },
+  button: {
+    flex: 0
   }
 });
